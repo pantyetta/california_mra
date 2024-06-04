@@ -4,7 +4,7 @@ import itertools
 
 data_file_path = "./dataset/cal_housing.data"
 
-df = pd.read_csv(data_file_path)
+df = pd.read_csv(data_file_path, header=None, names=["longitude","latitude","housingMedianAge","totalRooms","totalBedrooms","population","households","medianIncome","medianHouseValue"])
 
 # データフレームの列数を取得
 num_columns = df.shape[1]
